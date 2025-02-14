@@ -1,0 +1,13 @@
+{
+  "name": "example-widget-loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "port" :"5000",
+  "scripts": {
+    "start": "serve ./"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
