@@ -29,7 +29,7 @@
 
     widget.appendChild(iframe);
 
-    const greeting = script.getAttribute("data-greeting");
+    const greeting = script?.getAttribute("data-greeting");
 
     const api = {
       sendMessage: (message) => {
@@ -86,11 +86,11 @@
     document.body.appendChild(widget);
   };
 
-  if (document.readyState === "complete") {
+  if (document?.readyState === "complete") {
     loadWidget();
   } else {
     document.addEventListener("readystatechange", () => {
-      if (document.readyState === "complete") {
+      if (document?.readyState === "complete") {
         loadWidget();
       }
     });
