@@ -1,6 +1,9 @@
 (() => {
   const script = document.currentScript;
 
+  console.log(script, "script");
+  
+
   const loadWidget = () => {
     const widget = document.createElement("div");
 
@@ -78,7 +81,7 @@
       widgetStyle.display = "block";
     });
 
-    const license = script.getAttribute("data-license");
+    const license = script?.getAttribute("data-license");
     const widgetUrl = `https://hilarious-dragon-0ae14f.netlify.app/?license=${license}`;
 
     iframe.src = widgetUrl;
